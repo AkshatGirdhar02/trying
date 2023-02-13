@@ -87,7 +87,10 @@ def main():
                 final_list.append(list1[i])
             for i in final_list:
                 print(i)
-                Download(i)
+                try:
+                    Download(i)
+                except:
+                    continue
             st.write("All videos have been downloaded")
             pathdir='.'
             mp4_filenames_list=glob.glob(os.path.join(pathdir,"*mp4"))
