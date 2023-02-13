@@ -4,3 +4,4 @@ pydub==0.25.1
 pytube==12.1.2
 streamlit==1.17.0
 yagmail==0.15.293
+ffprobe==0.5
