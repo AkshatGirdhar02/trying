@@ -76,6 +76,7 @@ def main():
             for v in s.results:
                 searchResults[v.title] = v.watch_url
             links=list(searchResults.values())
+            st.write("Links found:",links);
             list1=[]
             final_list=[]
             for i in range(len(links)):
