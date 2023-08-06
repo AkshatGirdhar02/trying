@@ -79,7 +79,7 @@ def main():
             st.write("Links found:",links);
             list1=[]
             final_list=[]
-            for("Going inside for")
+            st.write("Going inside for")
             for i in range(len(links)):
                 st.write("Inside for:")
                 yt = YouTube(links[i]) 
