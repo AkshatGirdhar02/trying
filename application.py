@@ -82,7 +82,8 @@ def main():
             st.write("Going inside for")
             for i in range(len(links)):
                 st.write("Inside for:")
-                yt = YouTube(links[i]) 
+                yt = YouTube(links[i])
+                st.write(yt)
                 st.write("Title is: ",yt.title)
                 try:
                     video_length = yt.length
