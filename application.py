@@ -76,7 +76,7 @@ def main():
             for v in s.results:
                 searchResults[v.title] = v.watch_url
             links=list(searchResults.values())
-            st.write("Links found:",links)
+            # st.write("Links found:",links)
             list1=[]
             final_list=[]
             st.write("Going inside for")
