@@ -81,6 +81,7 @@ def main():
             final_list=[]
             for i in range(len(links)):
                 yt = YouTube(links[i]) 
+                st.write(yt.title)
                 try:
                     video_length = yt.length
                     if(video_length<=300):
