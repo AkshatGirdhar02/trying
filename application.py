@@ -86,6 +86,8 @@ def main():
                         list1.append(links[i])
                 except:
                     pass
+            st.write("Number of videos required: ",number)
+            st.write("Links of videos found: ",list1)
             for i in range(number):
                 final_list.append(list1[i])
             for i in final_list:
