@@ -80,9 +80,12 @@ def main():
             final_list=[]
             for i in range(len(links)):
                 yt = YouTube(links[i]) 
-                video_length = yt.length
-                if(video_length<=300):
-                    list1.append(links[i])
+                try:
+                    video_length = yt.length
+                    if(video_length<=300):
+                        list1.append(links[i])
+                except:
+                    pass
             for i in range(number):
                 final_list.append(list1[i])
             for i in final_list:
